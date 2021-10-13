@@ -17,13 +17,7 @@ function ErrorFallback({error}) {
   return (
     <ErrorMessage
       error={error}
-      css={{
-        height: '100%',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-      }}
+      className="flex flex-col items-center justify-center min-h-screen py-2"
     />
   )
 }
