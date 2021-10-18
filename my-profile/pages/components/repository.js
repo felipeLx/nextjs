@@ -3,33 +3,37 @@ import { faJava, faReact, faJs, faNodeJs } from "@fortawesome/free-brands-svg-ic
 
 export default function Repository() {
     return(
-        <section aria-label="knowledge" className="box grid grid-cols-2 mt-4 mb-4 text-center box-content p-4 m-2 font-1.2 text-0.75 -botton-2 pb-8 items-center justify-center rounded-3 shadow-white">
-                <h3 className="text-1 font-bold p-2">What I know</h3>
-                <a href="https://github.com/felipeLx/react" type="button" className="bg-five w-50 p-4 mt-2 shadow-xls rounded-3 hover:transform">
-                    <br />
-                    <span className="p2"><FontAwesomeIcon icon={faReact}></FontAwesomeIcon>
+        <section aria-label="contacts" className="box-content pb-12 justify-center items-stretch bottom-3 p-4 font-1.2 text-0.75 rounded-3 shadow-white">
+            <h3 className="text-1 font-bold p-4 font-light text-center">REPOSITORIES</h3>
+            <div className="flex flex-row flex-row space-y-6 space-x-4 lg:flex-col xl:flex-col">
+                <a href="https://github.com/felipeLx/react" type="button" className="box p-0 m-0 box-content space-between flex-1 rounded-4 bg-opacity-40 hover:bg-second">
+                    <span className="space-around"><FontAwesomeIcon icon={faReact}></FontAwesomeIcon>
+                        <br />
                         React
                     </span>
                 </a>
-                <a href="https://github.com/felipeLx/javascript" type="button" className="bg-five w-50 p-4 mt-1 shadow-xls rounded-3 hover:transform">
-                <br />
-                    <span className="p2"><FontAwesomeIcon icon={faJs}></FontAwesomeIcon>
+                <a href="https://github.com/felipeLx/javascript" type="button" className="box box-content space-between flex-1 rounded-4 bg-opacity-40 hover:bg-second">
+                
+                    <span className="space-around"><FontAwesomeIcon icon={faJs}></FontAwesomeIcon>
+                    <br />
                     Javascript
                     </span>
                 </a>
-                <a href="https://github.com/felipeLx/nextjs" type="button" className="bg-five w-50 p-4 mt-1 shadow-xls rounded-3 hover:transform">
-                <br />
-                    <span className="p2"><FontAwesomeIcon icon={faNodeJs}></FontAwesomeIcon>
+                <a href="https://github.com/felipeLx/nextjs" type="button" className="box box-content space-between flex-1 shadow-xl rounded-4 bg-opacity-40 hover:bg-second">
+                
+                    <span className="space-around"><FontAwesomeIcon icon={faNodeJs}></FontAwesomeIcon>
+                    <br />
                     NodeJs
                     </span>
                 </a>
-                <a href="https://github.com/felipeLx/java" type="button" className="bg-five w-50 p-4 mt-1 shadow-xls rounded-3 hover:transform">
-                <br />
-                    <span className="p2"><FontAwesomeIcon icon={faJava}></FontAwesomeIcon>
+                <a href="https://github.com/felipeLx/java" type="button" className="box box-content space-between flex-1 rounded-4 bg-opacity-40 hover:bg-second">
+                
+                    <span className="space-around"><FontAwesomeIcon icon={faJava}></FontAwesomeIcon>
+                    <br />
                     Java
                     </span>
                 </a>
-                
+            </div>    
         </section>
     )
 

@@ -20,7 +20,7 @@
 *.pem
 
 #db
-/data/*
+
 
 # debug
 npm-debug.log*

@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "phone",
+        "link": "https://wa.me/0035795776792",
+        "icon" : "faMobile"
+    },
+    {
+        "id": 2,
+        "name": "linkedin",
+        "link": "https://linkedin.com/in/felipealisboa",
+        "icon": "faLinkedin"
+    },
+    {
+        "id": 3,
+        "name": "github",
+        "link": "https://github.com/felipeLx",
+        "icon": "faGithubSquare"
+    }
+]

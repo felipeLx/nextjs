@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "name":"Epic React",
+        "description": "How to be a profesional in React with Kent C Dodds"
+    },
+    {
+        "id": 2,
+        "name":"React",
+        "description": "The complete guide - Academind"
+    },
+    {
+        "id": 3,
+        "name":"Web Development",
+        "description": "Web Development with Angela Yu Bootcamp"
+    },
+    {
+        "id": 4,
+        "name":"Azure Fundamentals",
+        "description": "Certificate AZ-900"
+    },
+    {
+        "id": 5,
+        "name":"AWS Fundamentals",
+        "description": "Building Serverless Applications, Addressing Secure Risk, Going Cloud Native"
+    },
+    {
+        "id": 6,
+        "name":"Spring Security",
+        "description": "Baeldung SpringSecurity"
+    },
+    {
+        "id": 7,
+        "name":"Spring Master",
+        "description": "Baeldung Spring Boot"
+    }
+]

@@ -1,19 +1,19 @@
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 import certificatesDB from 'data/certificates.json'
 
-let certificatesFromDB = [...certificatesDB]
+let certificates = [...certificatesDB]
 
 export default function Certificates() {
-    const [certificates, setCertificates] = useState(certificatesFromDB)
+    
     return(
-        <section className="bg-second p-4" aria-label="certification">
-                <span type="button" className="font-bold text-lg text-white shadow-xls">Certification</span>
+        <section className="bg-second bg-contain space-y-3 pb-8 justify-center content-center items-center pt-4" aria-label="certification">
+                <span type="button" className="font-bold text-lg text-gray-300 box rounded-2 shadow-xls">Certification</span>
                     {
                         certificates.map(certificate => {
                             return(
-                                <ul className="text-white pb-4 h-full hover:box-content hover:shadow-lg hover:border-1.2 hover:opacity-0.4 hover:capitalize hover:text-gray-300" key={certificate.id}>
+                                <ul className="text-white hover:box hover:box-content hover:shadow-lg hover:border-1.2 hover:opacity-0.4 hover:text-gray-300" key={certificate.id}>
                                     <li className="text-white text-base list-none">{certificate.name}</li>
-                                    <pre className="pr-2 pl-2 italic overflow-x-auto text-xs text-white">{certificate.description}</pre>
+                                    <pre className="pr-2 pl-2 overflow-x-auto break-words italic text-xs text-white">{certificate.description}</pre>
                                 </ul>  
                             )
                         })

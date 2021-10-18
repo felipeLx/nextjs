@@ -8,7 +8,7 @@ export default function MainBody() {
     //const [studies, setStudies] = useState('')
 
     return(
-        <div className="flex flex-col m-0 p-0 content-start lg:flex-grow md:flex-1 overflow-ellipsis md:break-all sm:break-all">
+        <div className="flex flex-col break-words w-full md:flex-grow lg:flex-grow xl:flex-grow">
             
             <Certificates />
             <Jobs />

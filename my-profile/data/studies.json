@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "name":"<Academia de Codigo_>",
+        "description": "14 weeks Bootcamp: Java and Javascript"
+    },
+    {
+        "id": 2,
+        "name":"Business Administration",
+        "description": "UNESA - 2011 to 2014"
+    },
+    {
+        "id": 3,
+        "name":"Business",
+        "description": "PUC-RJ - 1997 to 2002"
+    }
+]
