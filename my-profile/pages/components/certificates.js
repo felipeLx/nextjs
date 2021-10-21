@@ -5,15 +5,15 @@ let certificates = [...certificatesDB]
 
 export default function Certificates() {
     
-    return(
-        <section className="bg-second bg-contain space-y-3 pb-8 justify-center content-center items-center pt-4" aria-label="certification">
-                <span type="button" className="font-bold text-lg text-gray-300 box rounded-2 shadow-xls">Certification</span>
+    return( 
+        <section className="bg-second bg-contain space-y-5 pt-8 pb-8 justify-center content-center items-center border-double border-black" aria-label="certification">
+                <span type="button" className="text-1 font-bold p-4 divide-y divide-black text-center text-black">CERTIFICATION</span>
                     {
                         certificates.map(certificate => {
                             return(
-                                <ul className="text-white hover:box hover:box-content hover:shadow-lg hover:border-1.2 hover:opacity-0.4 hover:text-gray-300" key={certificate.id}>
-                                    <li className="text-white text-base list-none">{certificate.name}</li>
-                                    <pre className="pr-2 pl-2 overflow-x-auto break-words italic text-xs text-white">{certificate.description}</pre>
+                                <ul className="hover:box hover:box-content hover:shadow-lg hover:opacity-0.5" key={certificate.id}> 
+                                    <li className="text-black text-lg list-none">{certificate.name}</li>
+                                    <pre className="italic text-base text-black sm:text-small break-words overflow-ellipsis overflow-hidden">{certificate.description}</pre>
                                 </ul>  
                             )
                         })

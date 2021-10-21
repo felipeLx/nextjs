@@ -10,14 +10,14 @@ export default function Home() {
         <title>Felipe Lisboa</title>
       </Head>
 
-      <main className="container w-full max-h-auto">
-        <nav className="flex flex-wrap bg-black p-4 items-center justify-around content-around text-center text-white hover:bg-white hover:text-black">
-          <h1 className="tracking-wide leading-7 font-semibold font-mono text-xl subpixel-antialiased hover:uppercase align-middle bg-gradient-r from-red-800 via-yellow-500 to-blue-300">
+      <main className="w-full p-0 m-0">
+        <nav className="flex flex-wrap items-center static relative space-around text-center text-white bg-gradient-to-r from-blue-900 to-red-500 hover:bg-gradient-to-l">
+        <Image src="/face.png" height={120} width={120} className="rounded-full ml-40 absolute overflow-visible" alt="" />
+          <h1 className="tracking-wide leading-7 font-semibold flex-grow text-center justify-center text-xl subpixel-antialiased ">
             FELIPE LISBOA
           </h1>
         </nav>
-        <Image src="/face.png" height={80} width={80} className="rounded-full float-right flex relative sm:text-center sm:align-center md:align-left sm:object-top md:object-top lg:object-left xl:object-left object-cover" alt="" />
-        <div className="flex flex-col text-center p-0 h-auto lg:flex-row xl:flex-row">
+        <div className="flex flex-col text-center lg:flex-row xl:flex-row items-stretch">
           <SideBar />
         
           <MainBody />

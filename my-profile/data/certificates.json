@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name":"Epic React",
-        "description": "How to be a profesional in React with Kent C Dodds"
+        "description": "How to be a profesional in React\n with Kent C Dodds"
     },
     {
         "id": 2,
@@ -22,7 +22,7 @@
     {
         "id": 5,
         "name":"AWS Fundamentals",
-        "description": "Building Serverless Applications, Addressing Secure Risk, Going Cloud Native"
+        "description": "Building Serverless Applications, \n Addressing Secure Risk, Going Cloud Native"
     },
     {
         "id": 6,

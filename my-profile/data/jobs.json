@@ -2,6 +2,6 @@
     {
         "id": 1,
         "name": "SCC4 Logistica",
-        "description": "Project using Java Spring, JPA and mySQL to handle the CRUD to frontend"
+        "description": "Project using Java Spring, JPA and \n mySQL to handle the CRUD to frontend"
     }
 ]

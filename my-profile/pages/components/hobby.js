@@ -3,21 +3,21 @@ import { faBookReader, faNewspaper, faSwimmingPool, faMountain} from "@fortaweso
 
 export default function Hobby() {
     return (
-        <section aria-label="contacts" className=" box-content p-4 m-2 font-1.2 text-0.75 -botton-2 pb-8 rounded-3 shadow-white">
-            <h3 className="text-1 font-bold p-2 space-between content-top justify-center flex-grow top-0 text-center">HOBBIES</h3>
-            <div className="flex flex-row flex-wrap mt-4 mb-4  items-center justify-center">
-                <span className="pl-2"><FontAwesomeIcon icon={faBookReader}> </FontAwesomeIcon> like to study</span>
-                <p type="button" className="box bg-five mt-2 p-2 text-0.75 w-50 hauto justify-center shadow-xls rounded-lg">                    
-                </p>
-                <span className="pl-2"><FontAwesomeIcon icon={faSwimmingPool}> </FontAwesomeIcon> love to swimming</span>
-                <p type="button" className="bg-five mt-2 p-2 text-0.75 w-50 h-auto justify-center shadow-xls rounded-lg">
-                </p>
-                <span className="pl-2"><FontAwesomeIcon icon={faNewspaper}></FontAwesomeIcon> ready the news</span>
-                <p type="button" className="bg-five mt-2 p-2 text-0.75 w-50 h-auto justify-center shadow-xls rounded-lg">
-                </p>
-                <span className="pl-2"><FontAwesomeIcon icon={faMountain}></FontAwesomeIcon> tracking in the montains</span>
-                <p type="button" className="bg-five mt-2 p-2 text-0.75 w-50 h-auto justify-center shadow-xls rounded-lg">
-                </p>
+        <section aria-label="contacts" className="p-4 font-1.2 text-0.75 pb-8 max-w-2/5">
+            <h3 className="text-1 font-bold p-4 text-center">HOBBIES</h3>
+            <div className="flex flex-wrap justify-center content-center gap-x-24 gap-y-6 sm:gap-x-4 border-red-500 border-4 rounded-lg border-double pt-4 pb-4 ">
+                <span className="space-around  text-lg"><FontAwesomeIcon icon={faBookReader}> </FontAwesomeIcon>
+                 <br />
+                 like to study</span>
+                <span className="space-around text-lg"><FontAwesomeIcon icon={faSwimmingPool}> </FontAwesomeIcon>
+                <br />
+                 love to swimming</span>
+                <span className="space-around text-lg"><FontAwesomeIcon icon={faNewspaper}></FontAwesomeIcon> 
+                <br />
+                ready the news</span>
+                <span className="space-around text-lg"><FontAwesomeIcon icon={faMountain}></FontAwesomeIcon> 
+                <br />
+                up the montains</span>
             </div>
         </section>
     )

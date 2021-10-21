@@ -4,14 +4,14 @@ let jobs = [...jobsDB]
 
 export default function Jobs() {
     return(
-        <section className="bg-third bg-contain p-4 h-600 space-y-8 justify-center content-center items-center pt-4" aria-label="experience">
-                <span type="button" className="font-bold text-lg text-gray-300 text-white shadow-xls tracking-wilde">Experience</span>
+        <section className="bg-third bg-contain space-y-5 pb-8 justify-center items-center" aria-label="experience">
+                <span type="button" className="text-1 font-bold p-4 text-center text-white">EXPERIENCE</span>
                     {
                         jobs.map(job => {
                             return(
-                                <ul className="text-white pb-4 hover:box-content hover:shadow-lg hover:border-1.2 hover:opacity-0.4 hover:capitalize hover:text-gray-300" key={job.id}>
-                                    <li className="pt-2 text-white text-base list-none">{job.name}</li>
-                                    <pre className="italic overflow-x-auto text-xs text-white md:truncate ...">{job.description}</pre>
+                                <ul className="text-white hover:box hover:box-content decoration-slice hover:shadow-lg hover:border-1.2 hover:opacity-0.4 hover:text-gray-300" key={job.id}>
+                                    <li className="text-white text-lg list-none">{job.name}</li>
+                                    <pre className="italic text-base text-white sm:text-sm overflow-ellipsis overflow-hidden">{job.description}</pre>
                                 </ul>
                             )
                         })
