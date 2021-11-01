@@ -12,7 +12,7 @@
     {
         "id": 3,
         "name":"Web Development",
-        "description": "Web Development with Angela Yu Bootcamp"
+        "description": "Web Development with \n Angela Yu Bootcamp"
     },
     {
         "id": 4,
@@ -22,12 +22,12 @@
     {
         "id": 5,
         "name":"AWS Fundamentals",
-        "description": "Building Serverless Applications, \n Addressing Secure Risk, Going Cloud Native"
+        "description": "Building Serverless Applications, \n Addressing Secure Risk, \n Going Cloud Native"
     },
     {
         "id": 6,
         "name":"Spring Security",
-        "description": "Baeldung SpringSecurity"
+        "description": "Baeldung Spring Security"
     },
     {
         "id": 7,

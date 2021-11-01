@@ -17,7 +17,7 @@ export default function Home() {
             FELIPE LISBOA
           </h1>
         </nav>
-        <div className="flex flex-col text-center lg:flex-row xl:flex-row items-stretch">
+        <div className="flex flex-col flex-cols-2 text-center lg:flex-row xl:flex-row items-stretch">
           <SideBar />
         
           <MainBody />

@@ -11,7 +11,7 @@ module.exports = {
       'first': '#2B2E4A',
       'second': '#E84545',
       'third': '#903749',
-      'quarter': '#53354A',
+      'forty': '#53354A',
       'five': '#424565',
      }),
      maxWidth: {

@@ -1,15 +1,13 @@
-import Certificates from "./certificates"
+import Certificates from './certificates'
 import Jobs from './jobs'
-import Studies from "./studies"
+import Studies from './studies'
+import Projects from './projects'
 
 export default function MainBody() {
-   
-    //const [experiences, setExperiences] = useState('')
-    //const [studies, setStudies] = useState('')
-
     return(
-        <div className="flex flex-col w-full">
+        <div className="flex-col text-white lg:w-3/4 xl:w-3/4 justify-center items-center align-middle">
             
+            <Projects />
             <Certificates />
             <Jobs />
             <Studies />

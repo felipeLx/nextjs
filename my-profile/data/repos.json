@@ -18,5 +18,15 @@
         "id": 4,
         "name": "java",
         "description": "https://github.com/felipeLx/java"
+    },
+    {
+        "id": 5,
+        "name": "aws",
+        "description": "https://github.com/felipeLx/javascript/tree/master/aws-coursera-certification"
+    },
+    {
+        "id": 6,
+        "name": "nodejs",
+        "description": "https://github.com/felipeLx/nodejs"
     }
 ]
