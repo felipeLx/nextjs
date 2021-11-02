@@ -7,6 +7,7 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2">
       <Head>
+        <meta name="description" content="my profile like developer" />
         <title>Felipe Lisboa</title>
       </Head>
 

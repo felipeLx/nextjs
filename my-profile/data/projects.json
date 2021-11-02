@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Burger Store",
+        "link": "https://react-my-burger-2c7eb.firebaseapp.com/",
+        "description": "Project using React and Redux."
+    },
+    {
+        "id": 2,
+        "name": "Virtual Store",
+        "link": "https://loja-lisboa.herokuapp.com/",
+        "description": "Project using NodeJS to backend, and to frontend with React and Redux."
+    },
+    {
+        "id": 3,
+        "name": "Weather App",
+        "link": "https://sexyweatherapp-644da.firebaseapp.com/",
+        "description": "Project using React."
+    },
+    {
+        "id": 4,
+        "name": "Movie Theater",
+        "link": "https://movie-app-9d5c5.firebaseapp.com/",
+        "description": "Project using JavaScript."
+    },
+    {
+        "id": 5,
+        "name": "Todo List",
+        "link": "https://todolist-felipe.herokuapp.com/",
+        "description": "Project with NodeJS \n and ejs views."
+    },
+    {
+        "id": 6,
+        "name": "Quiz Game",
+        "link": "https://deploy-personal-projects.github.io/quiz/",
+        "description": "Project using JavaScript."
+    },
+    {
+        "id": 7,
+        "name": "BlackJack Game",
+        "link": "https://deploy-personal-projects.github.io/blackjack/",
+        "description": "Project using JavaScript."
+    }
+]
