@@ -1,0 +1,26 @@
+{
+  "title": "Be-Project Commerce",
+  "titleTemplate": "%s - Be-Project",
+  "description": "Project that drive you for a specific topic.",
+  "openGraph": {
+    "title": "Be-Project Storefront | Powered by Be-Project",
+    "description": "Be-Project Commerce - https://be-project.vercel.app/",
+    "type": "website",
+    "locale": "en_IE",
+    "url": "https://be-project.vercel.app/",
+    "site_name": "Be-Project Commerce",
+    "images": [
+      {
+        "url": "/card.png",
+        "width": 800,
+        "height": 600,
+        "alt": "Be-Project Commerce"
+      }
+    ]
+  },
+  "twitter": {
+    "handle": "@be-project-br",
+    "site": "@be-project-commerce",
+    "cardType": "summary_large_image"
+  }
+}

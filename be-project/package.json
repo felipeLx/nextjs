@@ -1,20 +1,76 @@
 {
   "private": true,
+  "author": "Felipe Lisboa - felipealisboa@outlook.com",
+  "description": "full stack aplicacion to ecommerce",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
-    "netlify-identity-widget": "^1.9.2",
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "@prisma/client": "^3.4.1",
+    "@react-spring/web": "^9.3.0",
+    "@vercel/fetch": "^6.1.1",
+    "body-scroll-lock": "^4.0.0-beta.0",
+    "cookie": "^0.4.1",
+    "deepmerge": "^4.2.2",
+    "email-validator": "^2.0.4",
+    "fs": "0.0.1-security",
+    "immutability-helper": "^3.1.1",
+    "js-cookies": "^1.0.4",
+    "lodash.debounce": "^4.0.8",
+    "lodash.random": "^3.2.0",
+    "lodash.throttle": "^4.1.1",
     "next": "latest",
+    "next-seo": "^4.28.1",
+    "next-themes": "0.0.15",
+    "path": "^0.12.7",
+    "prettier": "^2.4.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-query": "^3.26.0"
+    "react-fast-marquee": "^1.2.1",
+    "react-merge-refs": "^1.1.0",
+    "react-use-measure": "^2.0.4",
+    "stripe": "^8.186.1",
+    "swell-js": "^3.12.0",
+    "swr": "^1.0.1",
+    "tabbable": "^5.2.1",
+    "uuidv4": "^6.2.12"
   },
   "devDependencies": {
-    "autoprefixer": "^10.2.6",
+    "autoprefixer": "^10.4.0",
     "postcss": "^8.3.5",
+    "prisma": "^3.4.1",
     "tailwindcss": "^2.2.4"
+  },
+  "next-unused": {
+    "alias": {
+      "@lib/*": [
+        "lib/*"
+      ],
+      "@assets/*": [
+        "assets/*"
+      ],
+      "@config/*": [
+        "config/*"
+      ],
+      "@components/*": [
+        "components/*"
+      ],
+      "@utils/*": [
+        "utils/*"
+      ]
+    },
+    "debug": true,
+    "include": [
+      "components",
+      "lib",
+      "pages"
+    ],
+    "exclude": [],
+    "entrypoints": [
+      "pages"
+    ]
   }
 }

@@ -1,3 +1,3 @@
-NextJs Project with Tailwind and Docker image.
+# Next.js + Tailwind + Prisma + PostgreSQL + auth Providers
 
-e-commerce to consume clothes api
+Full-stack application
