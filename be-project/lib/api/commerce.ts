@@ -1,3 +1,3 @@
-import { getCommerceApi } from '@framework/commerce/api'
+import { getCommerceApi } from '@framework/api'
 
 export default getCommerceApi()
