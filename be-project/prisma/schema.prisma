@@ -7,13 +7,31 @@ generator client {
   provider = "prisma-client-js"
 }
 
-model Post {
-  id        Int     @default(autoincrement()) @id
-  title     String
-  content   String?
-  published Boolean @default(false)
-  author    User?   @relation(fields: [authorId], references: [id])
-  authorId  Int?
+model Category {
+  id            Int       @default(autoincrement()) @id
+  name          String
+  products      Product[]  
+  image         String?
+  createdAt     DateTime  @default(now()) @map(name: "created_at")
+  updatedAt     DateTime  @updatedAt @map(name: "updated_at")
+  @@map(name: "categories")
+}
+
+model Product {
+  id               Int       @default(autoincrement()) @id
+  name             String
+  price            Float
+  image            String
+  brand            String
+  categories       Category[] @relation(fields: [categoryId], references: [id])
+  buyers           User[] @relation(fields: [userId], references: [id])
+  currentInventory Int
+  description      String
+  createdAt        DateTime  @default(now()) @map(name: "created_at")
+  updatedAt        DateTime  @updatedAt @map(name: "updated_at")
+  categoryId       Int?
+  userId           Int?
+  @@map(name: "products")
 }
 
 model User {
@@ -22,6 +40,6 @@ model User {
   email         String?   @unique
   createdAt     DateTime  @default(now()) @map(name: "created_at")
   updatedAt     DateTime  @updatedAt @map(name: "updated_at")
-  posts         Post[]
+  products      Product[]
   @@map(name: "users")
 }
