@@ -7,39 +7,97 @@ generator client {
   provider = "prisma-client-js"
 }
 
-model Category {
-  id            Int       @default(autoincrement()) @id
+
+
+model User {
+  id            Int       @id @default(autoincrement())
   name          String
+  email         String   @unique
+  social        Json?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  isAdmin       Boolean   @default(false)
+
+  // Relatio fields
+  baskets      Baskets[]  @relation(name: "baskets")
+  products     Product[]  relation(name: "products")
+  tokens      Token[]
+  feedback    ProductFeedback[]
+}
+
+model Token {
+  id         Int       @id @default(autoincrement())
+  createdAt  DateTime  @default(now())
+  updatedAt  DateTime  @updatedAt
+  type       TokenType
+  emailToken String?   @unique // Only used for short lived email tokens
+  valid      Boolean   @default(true)
+  expiration DateTime
+
+  // Relation fields
+  user   User @relation(fields: [userId], references: [id])
+  userId Int
+}
+
+model Category {
+  id            Int       @id @default(autoincrement())
+  name          String    @unique
+  image?        URL
+  createdAt     DateTime  @default(now()) 
+  updatedAt     DateTime  @updatedAt
+  
+  // Relation fields
   products      Product[]  
-  image         String?
-  createdAt     DateTime  @default(now()) @map(name: "created_at")
-  updatedAt     DateTime  @updatedAt @map(name: "updated_at")
-  @@map(name: "categories")
 }
 
 model Product {
-  id               Int       @default(autoincrement()) @id
-  name             String
+  id               Int       @id @default(autoincrement()) @id
+  name             String    @unique
   price            Float
-  image            String
-  brand            String
-  categories       Category[] @relation(fields: [categoryId], references: [id])
-  buyers           User[] @relation(fields: [userId], references: [id])
-  currentInventory Int
-  description      String
-  createdAt        DateTime  @default(now()) @map(name: "created_at")
-  updatedAt        DateTime  @updatedAt @map(name: "updated_at")
-  categoryId       Int?
-  userId           Int?
-  @@map(name: "products")
+  image?           URL
+  brand?           String
+  description?     String
+
+  // Relation fields
+  users BoughtProduct[]
+  categories Category[]
+  feedback Review[]
 }
 
-model User {
-  id            Int       @default(autoincrement()) @id
-  name          String?
-  email         String?   @unique
-  createdAt     DateTime  @default(now()) @map(name: "created_at")
-  updatedAt     DateTime  @updatedAt @map(name: "updated_at")
-  products      Product[]
-  @@map(name: "users")
+model Review {
+  id                Int       @id @default(autoincrement()) @id
+  feedback          Int
+
+  clientId  Int
+  courseId  Int
+  client    User  @relation(fields: [clientId],
+  references: [id])
+  products  Product @relation(fields: [productId],
+  references: [id])
+}
+
+model orderedProduct {
+  createdAt DateTime @default(now())
+  role UserRole
+
+  // Relation fields
+  userId        Int
+  courseId      Int
+  user          User @relation(fields:[userId],
+  references: [id])
+  product       Product @relation(fields: [productId],
+  references: [id])
+
+  @@id([userId, productId])
+  @@index([userId, role])
+}
+
+enum UserRole {
+  TEST,
+  USER
+}
+
+enum TokenType {
+  EMAIL // used as a short lived token sent to the user's email
+  API
 }
