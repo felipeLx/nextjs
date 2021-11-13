@@ -28,9 +28,5 @@
     }
   },
   "include": ["next-env.d.ts", "**/*.d.ts", "**/*.ts", "**/*.tsx", "**/*.js"],
-  "exclude": [
-    "node_modules",
-    "./framework/bigcommerce",
-    "./framework/vendure"
-  ]
+  "exclude": ["node_modules", "./framework/bigcommerce", "./framework/vendure"]
 }

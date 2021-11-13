@@ -36,6 +36,7 @@ const LoginView: FC<Props> = () => {
       setLoading(false)
       closeModal()
     } catch ({ errors }) {
+      // this error show up, but while not run and exist an error still complain
       setMessage(errors[0].message)
       setLoading(false)
       setDisabled(false)
