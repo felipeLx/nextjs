@@ -4,7 +4,6 @@ import cn from 'classnames'
 import type { LineItem } from '@commerce/types/cart'
 import useCart from '@framework/cart/use-cart'
 import useCustomer from '@framework/customer/use-customer'
-import { Avatar } from '@components/common'
 import { Heart, Bag } from '@components/icons'
 import { useUI } from '@components/ui/context'
 import Button from '@components/ui/Button'
@@ -48,13 +47,7 @@ const UserNav: FC<Props> = ({ className }) => {
             {customer ? (
               <DropdownMenu />
             ) : (
-              <button
-                className={s.avatarButton}
-                aria-label="Menu"
-                onClick={() => openModal()}
-              >
-                <Avatar />
-              </button>
+              null
             )}
           </li>
         )}

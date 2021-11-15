@@ -58,16 +58,7 @@ model VerificationRequest {
   @@map(name: "verification_requests")
 }
 
-model Category {
-  id            Int       @id @default(autoincrement())
-  name          String    @unique
-  image        String?
-  createdAt     DateTime  @default(now()) 
-  updatedAt     DateTime  @updatedAt
-  
-  // Relation fields
-  product      Product[]  
-}
+
 
 model Product {
   id               Int       @id @default(autoincrement())
@@ -76,12 +67,11 @@ model Product {
   image           String?
   brand           String?
   description     String?
-
+  category        String?
+  
   // Relation fields
   user OrderedProduct[]
   feedback ProductReview[]
-  categoryId  Int
-  category Category @relation(fields: [categoryId], references: [id])
 }
 
 model ProductReview {

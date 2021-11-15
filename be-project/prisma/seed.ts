@@ -25,31 +25,14 @@ await prisma.product.deleteMany({})
     create: {
       email: 'test-admin@felipeLx.io',
       name: 'Admin',
-      isAdmin: true,
     },
     update: {
       name: 'Admin',
-      isAdmin: true,
     },
     where: {
       email: 'test-admin@prisma.io',
     },
   })
-  
-  const categoryTypes = await Promise.all(
-    fetchCategories.map(({id, name}) => prisma.category.upsert({
-      create: {
-          id,
-          name,
-        },
-        update: {
-          name,
-        },
-        where: {
-          name
-        },
-    })
-  ))
 
   const productsFetched = await Promise.all(
     fetchProducts.map(({
@@ -68,9 +51,7 @@ await prisma.product.deleteMany({})
         price,
         image,
         description,
-        category: {
-            connect: {id: 3}
-        },
+        category
       }
     }))
   )
@@ -92,10 +73,7 @@ count: 259
   console.log(
     `Created test admin\tid: ${testAdmin.id} | email: ${testAdmin.email} `,
   )
-  console.log(
-    `Created categories: ${categoryTypes} `,
-  )
-
+  
   console.log(
     `Created
      products: ${productsFetched} `,
